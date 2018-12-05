@@ -1,17 +1,24 @@
 # gifAnimation processing library
 
-GifAnimation is a [Processing][1] library to play and export GIF animations. The GIFEncoder &amp; GIFDecoder classes were written by [Kevin Weiner][2]. Please see the separate copyright notice in the headers of the GifDecoder &amp; GifEncoder classes.
-
+GifAnimation is a [Processing][1] library to play and export GIF animations. 
+Original code by [Patrick Meister][6].
+The GIFEncoder &amp; GIFDecoder classes were written by [Kevin Weiner][2].
+Please see the separate copyright notice in the headers of the GifDecoder &amp; GifEncoder classes.
+Processing 3.x port by [Jerome Saint-Clair][3]
 
 ## DOWNLOAD
 
-[gifAnimation.zip][3] (compatible with Processing 1.x and 2.x)
+- [gifAnimation.zip][4] (compatible with Processing 1.x and 2.x)
+- [GifAnimation.zip][5] (compatible with Processing 3.x)
 
 ##  INSTALLATION:
+
 ### Processing 1.x
 Download and unzip the gifAnimation.zip and copy the gifAnimation-folder into your processing libraries folder.
 ### Processing 2.x
 Same as Processing 1.x **OR** use the built-in library-browser in the IDE
+### Processing 3.x
+Download and unzip the gifAnimation.zip and copy the gifAnimation-folder into your processing libraries folder.
 
 ## USAGE:
 
@@ -99,26 +106,26 @@ void mousePressed() {
 ```
 
 
-##DOCUMENTATION
-###The 'Gif' Class
+## DOCUMENTATION
+### The 'Gif' Class
 
-####void play()
+#### void play()
 plays the animation without loop
 
-####void pause()
+#### void pause()
 pauses the animation
 
-####void stop()
+#### void stop()
 stops and rewinds the animation
 
-####void loop()
+#### void loop()
 starts the animation. it will play in a loop and ignore the
 GIF repeat setting.
 
-####void noLoop()
+#### void noLoop()
 disables looping
 
-####void ignoreRepeat()
+#### void ignoreRepeat()
 GIF-files can have a repeat-count setting. It states the amount of loops this animation should perform. if you call `ignoreRepeat()` on a Gif object, it will ingore this setting when playing. If you start animations using `loop()`, repeat settings will always be ignored.
 
 #### void jump(int where)
@@ -191,6 +198,7 @@ the sketch folder. Returns true if saving the file was successful, false if not.
 
    [1]: http://www.processing.org
    [2]: http://www.fmsware.com/stuff/gif.html
-   [3]: http://www.extrapixel.ch/processing/gifAnimation/gifAnimation.zip
-   [4]: http://extrapixel.ch/processing/gifAnimation/applet/
-  
+   [3]: http://www.saint-clair.net
+   [4]: http://www.extrapixel.ch/processing/gifAnimation/gifAnimation.zip
+   [5]: https://github.com/extrapixel/gif-animation/archive/3.0.zip
+   [6]: https://github.com/extrapixel
